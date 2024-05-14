@@ -47,6 +47,76 @@ You can clone this project and run the code below to load this model for further
 load_model = tf.keras.models.load_model('model_checkpoint')
 ```
 
+### Model Architecture
+
+This Convolutional Neural Network (CNN) model consists of the following main components:
+
+1. Input Layer:
+
+Input dimension of (28, 28, 1), representing 28x28 pixel grayscale images with one channel.
+
+
+2. Convolutional Layer 1 (MyConv2D):
+
+32 5x5 convolutional filters.
+
+ReLU activation function.
+
+Zero padding (padding='SAME') to maintain output size same as input.
+
+Output size of (28, 28, 32).
+
+
+3. Max Pooling Layer 1 (MaxPooling2D):
+
+2x2 pooling window.
+
+Pooling with stride 2.
+
+Output size of (14, 14, 32).
+
+
+4. Convolutional Layer 2 (MyConv2D):
+
+64 5x5 convolutional filters.
+
+ReLU activation function.
+
+Zero padding (padding='SAME') to maintain output size same as input.
+
+Output size of (14, 14, 64).
+
+
+5. Max Pooling Layer 2 (MaxPooling2D):
+
+2x2 pooling window.
+
+Pooling with stride 2.
+
+Output size of (7, 7, 64).
+
+
+6. Flatten Layer:
+
+Flatten the input into a one-dimensional vector for the fully connected layers.
+
+
+7. Fully Connected Layer 1 (Dense):
+
+1024 neurons.
+
+ReLU activation function.
+
+
+8. Dropout Layer:
+
+Randomly dropout neurons with a probability of 0.5 to reduce overfitting.
+
+
+9. Fully Connected Layer 2 (Dense) - Output Layer:
+
+Number of neurons depends on the output classes, softmax activation function is used for multi-class classification.
+
 ###  Unit test
 
 
