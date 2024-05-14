@@ -33,6 +33,12 @@ You can  install them using the following command:
 ```bash
 pip install -r requirements.txt
 
+
+
+
+
+
+
 ### Download dataset
 [Fashion MNIST Dataset] (https://github.com/zalandoresearch/fashion-mnist)
 
