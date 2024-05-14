@@ -1,18 +1,14 @@
 # Fashion MNIST Classification using CNN
 
 
-
 This repository contains a simple Convolutional Neural Network (CNN) model for classifying images from the Fashion MNIST dataset. 
 The model is implemented in Python using TensorFlow and Keras.
-
 
 ## Overview
 
 
-
 Fashion MNIST is a dataset of Zalando's article images, consisting of 60,000 28x28 grayscale images of 10 fashion categories. 
 The goal is to train a CNN model to accurately classify these images.
-
 
 ## Getting Started
 
@@ -29,21 +25,16 @@ tensorflow
 
 
 You can  install them using the following command:
-
 ```bash
 pip install -r requirements.txt
-
-
-
-
-
-
+```
 
 ### Download dataset
+
+
 [Fashion MNIST Dataset] (https://github.com/zalandoresearch/fashion-mnist)
 
-
-####  Model
+###  Model
 
 
 The model is trained using the Fashion MNIST training dataset.
@@ -54,17 +45,16 @@ You can clone this project and run the code below to load this model for further
 
 ```bash
 load_model = tf.keras.models.load_model('model_checkpoint')
+```
 
-####  Unit test
+###  Unit test
 
 
 You can unit test by running the following command：
-
 ```bash
 python test_model.py
-
-
-####  About cnn
+```
+###  About cnn
 
 
 CNN is favored in computer vision applications due to its good feature extraction capabilities, parameter sharing and sparse connections, strong adaptability, end-to-end learning and deep structure.
@@ -81,8 +71,8 @@ DenseNet: Introducing a dense connection structure, each layer is connected to a
 
 SENet: By modeling the relationship between feature channels, it enhances useful features and suppresses useless features, thereby improving network performance.
 
+##  Reference
 
-####  Reference
 
 【Google Team】Inception
 [2014.09] Inception v1: [Link](https://arxiv.org/pdf/1409.4842.pdf)
